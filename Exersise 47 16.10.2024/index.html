@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello to my page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="output"></div>
+    <hr>
+    <ul>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+    <div class="login form"> 
+        <form action="/login" method="GET"> 
+            <div>
+                <label for="username">Username: 
+                    <input type="text" id="username" name="username" required> <!-- Добавен атрибут required -->
+                </label>
+            </div>
+            <div>
+                <label for="password">Password: 
+                    <input type="password" id="password" name="password" required> <!-- Добавен атрибут required -->
+                </label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <script src="main.js"></script>
+
+    <div class="container">
+        <img src="images/dubai.jpg" alt="Dubai">
+    </div>
+</body>
+</html>

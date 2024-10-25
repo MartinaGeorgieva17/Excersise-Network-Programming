@@ -1,22 +1,25 @@
 import requests
 
+# response = requests.request("GET", 'https://httpbin.org/')
 headers = {
-    "user-agent": "My Python Client"
-
+    'user-agent': 'My Python Client',
 }
+
 params = {
-    "x": 1,
-    "y":2
+    'x':1,
+    'y':2
 }
-response = requests.get("GET", "http://httpbin.org/x=1&y=2", headers=headers)
 
-response = requests.get("GET", "127.0.0.1:8080", headers=headers, params=params)
+# response = requests.get('https://httpbin.org/?x=1&y=2', headers=headers)
 
-# print(response.headers)
-# print(response.ok)
-# print(response.status_code)
-# print(response.request)
-print("~"*30)
-print(response.text)
-# print("~"*30)
+response = requests.get('http://127.0.0.1:8000', headers=headers, params=params)
+
+print(response.request.headers)
+print('~'*30)
+print(response.headers)
+print(response.ok)
+print(response.status_code)
+
+# print(response.text)
+# print('~'*30)
 # print(response.content)

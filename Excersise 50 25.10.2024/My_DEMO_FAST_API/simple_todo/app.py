@@ -2,14 +2,12 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi import Request
-from db import SessionLocal, engine
-from simple_todo_app.db import get_tasks, add_task, delete_task
-from simple_todo_app.models import Task, TaskCreate
-
-
+from .db import get_tasks, add_task, delete_task  
+from .models import Task, TaskCreate
 
 app = FastAPI()
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="../My_DEMO_FAST_API/templates")
+
 
 @app.get("/")
 def read_root():
@@ -23,8 +21,7 @@ async def read_html(request: Request):
 async def read_tasks():
     return get_tasks()
 
-
-@ app.post("/tasks", response_model=Task)
+@app.post("/tasks", response_model=Task)
 def create_task(task: TaskCreate):
     new_task = add_task(task.dict())
     if not new_task:

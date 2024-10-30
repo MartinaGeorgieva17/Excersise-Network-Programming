@@ -1,6 +1,6 @@
 tasks = [
     {"id": 1, "title": "Buy groceries", "completed": False},
-    {"id": 2, "title": "Read Fast API Tutoria", "completed": False}
+    {"id": 2, "title": "Read Fast API Tutorial", "completed": False}
 ]
 
 def get_tasks():
@@ -13,5 +13,5 @@ def add_task(task):
 
 def delete_task(task_id):
     global tasks
-    tasks = [task for task in tasks if task["id"] !=task_id]
+    tasks = [task for task in tasks if task["id"] != task_id]
     return len(tasks) < len(tasks)

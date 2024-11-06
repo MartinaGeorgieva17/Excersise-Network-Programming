@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product id="1">
+        <name>Product A</name>
+        <description>A high-quality product.</description>
+        <price>19.99</price>
+        <currency>USD</currency>
+        <category>Electronics</category>
+    </product>
+    <product id="2">
+        <name>Product B</name>
+        <description>An eco-friendly product.</description>
+        <price>29.99</price>
+        <currency>USD</currency>
+        <category>Home</category>
+    </product>
+    <product id="3">
+        <name>Product C</name>
+        <description>A durable and long-lasting product.</description>
+        <price>15.49</price>
+        <currency>USD</currency>
+        <category>Outdoor</category>
+    </product>
+</products>

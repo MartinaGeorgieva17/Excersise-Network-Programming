@@ -1,0 +1,12 @@
+movie
+
+id | title                      | genre                     | directors
+1  | The Shawshank Redemption   |  1,2,3                    | Direcotr1
+
+
+
+genre
+id| name
+1 | Epic
+2 | Prizon Drama
+3 | Drama

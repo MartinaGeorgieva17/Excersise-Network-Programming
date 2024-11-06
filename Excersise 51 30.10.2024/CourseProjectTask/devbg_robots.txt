@@ -1,0 +1,10 @@
+# https://dev.bg/
+
+?s=python&post_type=job_listing
+
+User-agent: *
+Disallow: /%D0%B8%D1%82-%D1%81%D1%8A%D0%B1%D0%B8%D1%82%D0%B8%D1%8F/action~*
+Disallow: /ит-събития/action~*
+
+User-agent: JoobleBot
+Disallow: /
